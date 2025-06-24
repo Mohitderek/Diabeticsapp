@@ -124,7 +124,7 @@ Diabeticsapp/
 
 ## 🖼️ Screenshots
 
-*(You can add screenshots of your web UI here if you want)*
+![Diabetes Prediction App Screenshot](screenshot.png)
 
 ---
 
@@ -132,7 +132,7 @@ Diabeticsapp/
 
 - Improve UI with Bootstrap or TailwindCSS
 - Add input validations and tooltips for better user experience
-- Deploy the app on cloud platforms like **Render**, **Heroku**, or **Vercel**
+- Deploy the app on cloud platforms.
 - Add user authentication for saving prediction history
 
 ---
@@ -144,16 +144,14 @@ Feel free to fork the repo, make changes, and submit a pull request.
 
 ---
 
+## ✍️ Author
+
+Mohit Derek
+
+📧 [mohitsercha5623@gmail.com]
+
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
 
-
----
-
-## 🖼️ Screenshot
-
-Below is a preview of the Diabetics Prediction Web Interface:
-
-![Diabetes Prediction App Screenshot](screenshot.png)
 

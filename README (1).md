@@ -17,7 +17,7 @@ Users input 8 health-related parameters, and the system returns a prediction of 
 ## 🎯 Objective
 
 The goal of this project is to:
-- Build and train a machine learning model on real-world diabetes data.
+- Build and train a machine learning model using support vector machine Algo on real-world diabetes data.
 - Deploy the model via a lightweight web application using Flask.
 - Create an interactive frontend that allows non-technical users to get predictions instantly.
 
@@ -82,7 +82,7 @@ Diabeticsapp/
 
 ## 🧠 Machine Learning Model
 
-- **Algorithm**: Logistic Regression (or specify if you used another)
+- **Algorithm**: Logistic Regression,Support vector machine
 - **Scaler**: StandardScaler to normalize input data
 - **Evaluation**: Accuracy, Confusion Matrix (evaluated inside notebook)
 - **Model Persistence**: Saved using `joblib` as `model.pkl` and `scaler.pkl`

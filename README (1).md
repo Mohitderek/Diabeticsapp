@@ -31,8 +31,8 @@ The goal of this project is to:
 | Framework         | Flask                                   |
 | Data Processing   | Pandas, NumPy                           |
 | Model Building    | Scikit-learn                            |
-| Frontend          | HTML, CSS (Basic)                       |
-| Deployment Ready  | Localhost (optionally deployable)       |
+| Frontend          | HTML, CSS                               |
+| Deployment Ready  | Localhost                               |
 
 ---
 

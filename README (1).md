@@ -91,31 +91,23 @@ Diabeticsapp/
 
 ## ⚙️ Installation & Running the App
 
-### 🔧 Step-by-Step Setup
-
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/Mohitderek/Diabeticsapp.git
    cd Diabeticsapp
    ```
 
-2. **(Optional) Create a Virtual Environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate        # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install Required Packages**
+2. **Install Required Packages**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Run the Flask App**
+3. **Run the Flask App**
    ```bash
    python app.py
    ```
 
-5. **Open the App in Browser**
+4. **Open the App in Browser**
    ```
    http://127.0.0.1:5000
    ```

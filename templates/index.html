@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diabetes Prediction</title>
+  <style>
+    /* Add clean form styling (reuse earlier code or keep simple) */
+    body {
+      font-family: Arial;
+      padding: 40px;
+      background-color: #f3f3f3;
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 6px;
+      margin-bottom: 12px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Diabetes Prediction</h2>
+    <form method="POST" action="/predict">
+      <label>Pregnancies</label>
+      <input type="number" name="pregnancies" required>
+
+      <label>Glucose</label>
+      <input type="number" name="glucose" required>
+
+      <label>Blood Pressure</label>
+      <input type="number" name="bloodPressure" required>
+
+      <label>Skin Thickness</label>
+      <input type="number" name="skinThickness" required>
+
+      <label>Insulin</label>
+      <input type="number" name="insulin" required>
+
+      <label>BMI</label>
+      <input type="number" name="bmi" step="0.1" required>
+
+      <label>Diabetes Pedigree Function</label>
+      <input type="number" name="dpf" step="0.001" required>
+
+      <label>Age</label>
+      <input type="number" name="age" required>
+
+      <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction is not none %}
+    <div class="result">
+      Outcome: {{ prediction }} — 
+      {% if prediction == 1 %}
+        <span style="color: red;">Diabetic</span>
+      {% else %}
+        <span style="color: green;">Not Diabetic</span>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+
+</body>
+</html>

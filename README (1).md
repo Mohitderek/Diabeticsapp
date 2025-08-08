@@ -1,110 +1,110 @@
-Diabetics Prediction App
-A machine learning-based web application that predicts whether a person is likely to have diabetes based on several health parameters. This project uses the Pima Indians Diabetes Dataset and provides predictions through a Flask-based web interface.
 
-Overview
-Early detection of diabetes can help prevent severe health complications. This application allows users to input health parameters and receive an instant prediction using a trained ML model.
+# Diabetics Prediction App
 
-Objective
-Train a machine learning model using Support Vector Machine on real-world diabetes data.
+A **machine learning web application** that predicts whether an individual is likely to have diabetes based on several health parameters. The app uses the **Pima Indians Diabetes dataset** and provides predictions through a **Flask** web interface.
 
-Deploy the model using Flask for real-time predictions.
+---
 
-Provide a simple web interface for easy use.
+## Overview
 
-Tech Stack
-Component	Tools / Libraries
-Language	Python
-Framework	Flask
-Data Processing	Pandas, NumPy
-Model Building	Scikit-learn
-Frontend	HTML, CSS
-Deployment	Localhost
+This application allows users to input 8 health-related parameters and receive a prediction on diabetes likelihood. It uses a trained ML model with a user-friendly interface.
 
-Project Structure
-bash
-Copy
-Edit
+---
+
+## Objective
+
+* Train a Support Vector Machine model on real-world diabetes data.
+* Deploy the model via a lightweight Flask web app.
+* Provide an interactive frontend for quick predictions.
+
+---
+
+## Tech Stack
+
+| Component       | Tools / Libraries |
+| --------------- | ----------------- |
+| Language        | Python            |
+| Framework       | Flask             |
+| Data Processing | Pandas, NumPy     |
+| Model Building  | scikit-learn      |
+| Frontend        | HTML, CSS         |
+
+---
+
+## Project Structure
+
+```
 Diabeticsapp/
 │
 ├── DiabetesPrediction.ipynb   # Model training and preprocessing
-├── app.py                     # Flask application
-├── diabetes.csv               # Dataset
-├── model.pkl                  # Trained ML model
-├── scaler.pkl                 # Feature scaler
-├── requirements.txt           # Required Python packages
+├── app.py                      # Flask application
+├── diabetes.csv                # Dataset
+├── model.pkl                   # Trained ML model
+├── scaler.pkl                  # Feature scaler
+├── requirements.txt            # Dependencies
 ├── templates/
-│   └── index.html             # Web interface
-└── README.md                  # Documentation
-Dataset Information
-Dataset: Pima Indians Diabetes Dataset
+│   └── index.html              # User input form
+└── README.md                   # Documentation
+```
 
-Source: UCI Machine Learning Repository
+---
 
-Records: 768 samples
+## Dataset
 
-Features:
+* **Dataset**: Pima Indians Diabetes Dataset
+* **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/pima+indians+diabetes)
+* **Records**: 768
+* **Features**: Pregnancies, Glucose, Blood Pressure, Skin Thickness, Insulin, BMI, Diabetes Pedigree Function, Age.
 
-Pregnancies
+---
 
-Glucose Level
+## Model
 
-Blood Pressure
+* **Algorithm**: Support Vector Machine (SVM)
+* **Scaler**: StandardScaler
+* **Evaluation**: Accuracy, Confusion Matrix
+* **Persistence**: joblib (`model.pkl`, `scaler.pkl`)
 
-Skin Thickness
+---
 
-Insulin Level
+## Installation & Usage
 
-BMI
+1. Clone the repository
 
-Diabetes Pedigree Function
+   ```bash
+   git clone https://github.com/Mohitderek/Diabeticsapp.git
+   cd Diabeticsapp
+   ```
 
-Age
+2. Install dependencies
 
-Machine Learning Model
-Algorithm: Logistic Regression, Support Vector Machine
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Scaler: StandardScaler
+3. Run the app
 
-Evaluation: Accuracy, Confusion Matrix
+   ```bash
+   python app.py
+   ```
 
-Model Persistence: Saved using joblib
+4. Open in browser: `http://127.0.0.1:5000`
 
-Installation & Usage
-Clone the Repository
+---
 
-bash
-Copy
-Edit
-git clone https://github.com/Mohitderek/Diabeticsapp.git
-cd Diabeticsapp
-Install Dependencies
+## Future Improvements
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the Application
+* Enhanced UI with Bootstrap/TailwindCSS
+* Input validations and tooltips
+* Cloud deployment
+* User authentication for history tracking
 
-bash
-Copy
-Edit
-python app.py
-Open in Browser
+---
 
-cpp
-Copy
-Edit
-http://127.0.0.1:5000
-Future Improvements
-Enhance UI using Bootstrap or TailwindCSS
+## Author
 
-Add input validation
+**Mohit Derek**
+📧 [mohitsercha5623@gmail.com](mailto:mohitsercha5623@gmail.com)
 
-Deploy on cloud platforms
-
-Implement user authentication to store history
-
-Author
-Mohit Derek
-Email: [mohitsercha5623@gmail.com]
+**License**: MIT License
 

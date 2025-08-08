@@ -1,149 +1,110 @@
-# 🩺 Diabetics Prediction App
+Diabetics Prediction App
+A machine learning-based web application that predicts whether a person is likely to have diabetes based on several health parameters. This project uses the Pima Indians Diabetes Dataset and provides predictions through a Flask-based web interface.
 
-A **Machine Learning-based web application** designed to predict whether an individual is likely to have diabetes based on several health parameters. This project uses the **Pima Indians Diabetes dataset**, and serves predictions through a Flask-powered web interface.
+Overview
+Early detection of diabetes can help prevent severe health complications. This application allows users to input health parameters and receive an instant prediction using a trained ML model.
 
-> 📍 Built with **Python**, **scikit-learn**, **Flask**, and **HTML**.
+Objective
+Train a machine learning model using Support Vector Machine on real-world diabetes data.
 
----
+Deploy the model using Flask for real-time predictions.
 
-## 📌 Overview
+Provide a simple web interface for easy use.
 
-Early diagnosis of diabetes can significantly reduce the risk of serious complications. This application provides a user-friendly platform for predicting diabetes likelihood using a trained ML model.
+Tech Stack
+Component	Tools / Libraries
+Language	Python
+Framework	Flask
+Data Processing	Pandas, NumPy
+Model Building	Scikit-learn
+Frontend	HTML, CSS
+Deployment	Localhost
 
-Users input 8 health-related parameters, and the system returns a prediction of whether the person is diabetic or not.
-
----
-
-## 🎯 Objective
-
-The goal of this project is to:
-- Build and train a machine learning model using support vector machine Algo on real-world diabetes data.
-- Deploy the model via a lightweight web application using Flask.
-- Create an interactive frontend that allows non-technical users to get predictions instantly.
-
----
-
-## 🛠️ Tech Stack
-
-| Component          | Tools / Libraries                      |
-|-------------------|-----------------------------------------|
-| Language          | Python                                  |
-| Framework         | Flask                                   |
-| Data Processing   | Pandas, NumPy                           |
-| Model Building    | Scikit-learn                            |
-| Frontend          | HTML, CSS                               |
-| Deployment Ready  | Localhost                               |
-
----
-
-## 📂 Project Structure
-
-```
+Project Structure
+bash
+Copy
+Edit
 Diabeticsapp/
 │
-├── DiabetesPrediction.ipynb     # Jupyter Notebook for model training and preprocessing
-├── app.py                       # Flask application for running the web app
-├── diabetes.csv                 # Dataset used for training
-├── model.pkl                    # Trained machine learning model (saved via joblib)
-├── scaler.pkl                   # Feature scaler for input normalization
-├── requirements.txt             # Required Python libraries
+├── DiabetesPrediction.ipynb   # Model training and preprocessing
+├── app.py                     # Flask application
+├── diabetes.csv               # Dataset
+├── model.pkl                  # Trained ML model
+├── scaler.pkl                 # Feature scaler
+├── requirements.txt           # Required Python packages
 ├── templates/
-│   └── index.html               # HTML form for user input
-└── README.md                    # Project documentation
-```
+│   └── index.html             # Web interface
+└── README.md                  # Documentation
+Dataset Information
+Dataset: Pima Indians Diabetes Dataset
 
----
+Source: UCI Machine Learning Repository
 
-## 💡 Features
+Records: 768 samples
 
-- 🔍 **Predictive Modeling**: Uses a trained ML model to predict diabetes risk.
-- 📊 **Data Preprocessing**: Input features are standardized using a pre-fit `StandardScaler`.
-- 🌐 **Web Interface**: Built with Flask and HTML for seamless input and prediction.
-- 📦 **Modular Codebase**: Clean separation between model, preprocessing, and app logic.
+Features:
 
----
+Pregnancies
 
-## 📊 Dataset Information
+Glucose Level
 
-- **Dataset**: Pima Indians Diabetes Dataset
-- **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/pima+indians+diabetes)
-- **Records**: 768 samples
-- **Features**:
-  - Number of Pregnancies
-  - Glucose Level
-  - Blood Pressure
-  - Skin Thickness
-  - Insulin Level
-  - Body Mass Index (BMI)
-  - Diabetes Pedigree Function
-  - Age
+Blood Pressure
 
----
+Skin Thickness
 
-## 🧠 Machine Learning Model
+Insulin Level
 
-- **Algorithm**: Logistic Regression,Support vector machine
-- **Scaler**: StandardScaler to normalize input data
-- **Evaluation**: Accuracy, Confusion Matrix (evaluated inside notebook)
-- **Model Persistence**: Saved using `joblib` as `model.pkl` and `scaler.pkl`
+BMI
 
----
+Diabetes Pedigree Function
 
-## ⚙️ Installation & Running the App
+Age
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/Mohitderek/Diabeticsapp.git
-   cd Diabeticsapp
-   ```
+Machine Learning Model
+Algorithm: Logistic Regression, Support Vector Machine
 
-2. **Install Required Packages**
-   ```bash
-   pip install -r requirements.txt
-   ```
+Scaler: StandardScaler
 
-3. **Run the Flask App**
-   ```bash
-   python app.py
-   ```
+Evaluation: Accuracy, Confusion Matrix
 
-4. **Open the App in Browser**
-   ```
-   http://127.0.0.1:5000
-   ```
+Model Persistence: Saved using joblib
 
----
+Installation & Usage
+Clone the Repository
 
-## 🖼️ Screenshots
+bash
+Copy
+Edit
+git clone https://github.com/Mohitderek/Diabeticsapp.git
+cd Diabeticsapp
+Install Dependencies
 
-![Diabetes Prediction App Screenshot](screenshot.png)
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Run the Application
 
----
+bash
+Copy
+Edit
+python app.py
+Open in Browser
 
-## 🚀 Future Enhancements
+cpp
+Copy
+Edit
+http://127.0.0.1:5000
+Future Improvements
+Enhance UI using Bootstrap or TailwindCSS
 
-- Improve UI with Bootstrap or TailwindCSS
-- Add input validations and tooltips for better user experience
-- Deploy the app on cloud platforms.
-- Add user authentication for saving prediction history
+Add input validation
 
----
+Deploy on cloud platforms
 
-## 🤝 Contributions
+Implement user authentication to store history
 
-Contributions, suggestions, and feedback are welcome!  
-Feel free to fork the repo, make changes, and submit a pull request.
-
----
-
-## ✍️ Author
-
+Author
 Mohit Derek
-
-📧 [mohitsercha5623@gmail.com]
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
+Email: [mohitsercha5623@gmail.com]
 
